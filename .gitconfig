@@ -1,0 +1,39 @@
+[alias]
+  lg = log --oneline --color --graph --decorate --all
+  lgg = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  co = checkout
+  d = diff
+  bl = branch --list
+  br = branch
+  s = status
+  ss = show-branch --list
+  st = status -sbu
+  sh = show --pretty="format:" --name-only
+  c = commit
+  ca = commit --amend --no-edit
+  prom = pull --rebase origin master
+  ri = rebase -i
+  cm = commit -m
+  p = push
+  po = push -u origin
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
