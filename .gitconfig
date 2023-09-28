@@ -1,3 +1,7 @@
+[user]
+  name = Eric Dudley
+  email = me@ericdudley.com
+
 [alias]
   lg = log --oneline --color --graph --decorate --all
   lgg = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
@@ -14,8 +18,10 @@
   prom = pull --rebase origin master
   ri = rebase -i
   cm = commit -m
+  cmn = commit --no-verify -m 
   p = push
   po = push -u origin
+  pn = push --no-verify
 
 [color]
   diff = auto
@@ -37,3 +43,5 @@
   added = yellow
   changed = green
   untracked = cyan
+[pull]
+  rebase = true
